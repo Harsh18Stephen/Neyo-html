@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neyo Lemon Soap</title>
+    <link rel="stylesheet" href="assests/css/header.css">
+    <link rel="stylesheet" href="assests/css/about.css">
+    <link rel="stylesheet" href="assests/css/footer.css">
+    <link rel="stylesheet" href="assests/css/products/shelf.css">
+    <link rel="stylesheet" href="assests/css/products/info.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-box">
+                        <a href="index.html">
+                            <img  src="https://placehold.co/200x70" alt="Neyo Naturals Logo" class="logo-image">
+                        </a>    
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Soaps</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="natural-bar-soap">
+                                            <div class="product-title">Natural Bar Soap</div>
+                                            <div class="product-description">Handcrafted with organic ingredients for gentle daily cleansing</div>
+                                        </div>
+                                        <div class="product-card" data-product="exfoliating-soap">
+                                            <div class="product-title">Exfoliating Soap</div>
+                                            <div class="product-description">Natural exfoliants for smooth, radiant skin</div>
+                                        </div>
+                                        <div class="product-card" data-product="moisturizing-soap">
+                                            <div class="product-title">Moisturizing Soap</div>
+                                            <div class="product-description">Enriched with shea butter and natural oils</div>
+                                        </div>
+                                        <div class="product-card" data-product="antibacterial-soap">
+                                            <div class="product-title">Antibacterial Soap</div>
+                                            <div class="product-description">Natural antimicrobial properties with tea tree oil</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Facial Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="daily-cleanser">
+                                            <div class="product-title">Daily Cleanser</div>
+                                            <div class="product-description">Gentle foam cleanser for daily use</div>
+                                        </div>
+                                        <div class="product-card" data-product="face-serum">
+                                            <div class="product-title">Face Serum</div>
+                                            <div class="product-description">Anti-aging serum with natural botanicals</div>
+                                        </div>
+                                        <div class="product-card" data-product="moisturizer">
+                                            <div class="product-title">Moisturizer</div>
+                                            <div class="product-description">Hydrating cream for all skin types</div>
+                                        </div>
+                                        <div class="product-card" data-product="face-mask">
+                                            <div class="product-title">Face Mask</div>
+                                            <div class="product-description">Deep cleansing clay mask</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Body Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="body-lotion">
+                                            <div class="product-title">Body Lotion</div>
+                                            <div class="product-description">Rich, nourishing formula for soft skin</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-scrub">
+                                            <div class="product-title">Body Scrub</div>
+                                            <div class="product-description">Exfoliating scrub with natural sea salt</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-oil">
+                                            <div class="product-title">Body Oil</div>
+                                            <div class="product-description">Luxurious oil blend for deep moisturizing</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-butter">
+                                            <div class="product-title">Body Butter</div>
+                                            <div class="product-description">Intense hydration for dry skin</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Hair Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="natural-shampoo">
+                                            <div class="product-title">Natural Shampoo</div>
+                                            <div class="product-description">Sulfate-free formula for healthy hair</div>
+                                        </div>
+                                        <div class="product-card" data-product="conditioner">
+                                            <div class="product-title">Conditioner</div>
+                                            <div class="product-description">Deep conditioning treatment</div>
+                                        </div>
+                                        <div class="product-card" data-product="hair-oil">
+                                            <div class="product-title">Hair Oil</div>
+                                            <div class="product-description">Nourishing oil for hair growth</div>
+                                        </div>
+                                        <div class="product-card" data-product="hair-mask">
+                                            <div class="product-title">Hair Mask</div>
+                                            <div class="product-description">Weekly intensive treatment</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </div>
+
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Soaps</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="natural-bar-soap">
+                    <div class="mobile-product-title">Natural Bar Soap</div>
+                    <div class="mobile-product-description">Handcrafted with organic ingredients</div>
+                </div>
+                <div class="mobile-product-card" data-product="exfoliating-soap">
+                    <div class="mobile-product-title">Exfoliating Soap</div>
+                    <div class="mobile-product-description">Natural exfoliants for smooth skin</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Facial Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="daily-cleanser">
+                    <div class="mobile-product-title">Daily Cleanser</div>
+                    <div class="mobile-product-description">Gentle foam cleanser</div>
+                </div>
+                <div class="mobile-product-card" data-product="face-serum">
+                    <div class="mobile-product-title">Face Serum</div>
+                    <div class="mobile-product-description">Anti-aging serum</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Body Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="body-lotion">
+                    <div class="mobile-product-title">Body Lotion</div>
+                    <div class="mobile-product-description">Rich, nourishing formula</div>
+                </div>
+                <div class="mobile-product-card" data-product="body-scrub">
+                    <div class="mobile-product-title">Body Scrub</div>
+                    <div class="mobile-product-description">Exfoliating sea salt scrub</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Hair Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="natural-shampoo">
+                    <div class="mobile-product-title">Natural Shampoo</div>
+                    <div class="mobile-product-description">Sulfate-free formula</div>
+                </div>
+                <div class="mobile-product-card" data-product="conditioner">
+                    <div class="mobile-product-title">Conditioner</div>
+                    <div class="mobile-product-description">Deep conditioning treatment</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-container">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="https://placehold.co/400x450?text=Hello+1" alt="Natural Lemon Soap" id="mainProductImage">
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active" data-image="https://placehold.co/400x450?text=Hello+1">
+                            <img src="https://placehold.co/80x80?text=Hello+1" alt="Main view">
+                        </div>
+                        <div class="thumbnail" data-image="https://placehold.co/400x450?text=Hello+2">
+                            <img src="https://placehold.co/80x80?text=Hello+2" alt="Side view">
+                        </div>
+                        <div class="thumbnail" data-image="https://placehold.co/400x450?text=Hello+3">
+                            <img src="https://placehold.co/80x80?text=Hello+3" alt="Close up">
+                        </div>
+                        <div class="thumbnail" data-image="https://placehold.co/400x450?text=Hello+4">
+                            <img src="https://placehold.co/80x80?text=Hello+4" alt="Ingredients">
+                        </div>
+                        <div class="thumbnail" data-image="https://placehold.co/400x450?text=Hello+5">
+                            <img src="https://placehold.co/80x80?text=Hello+5" alt="Usage">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="product-details">
+                    <h1 class="product-title">Natural Lemon Soap</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                        </div>
+                        <span class="rating-text">(754 Reviews)</span>
+                    </div>
+
+                    <p class="product-tagline">Brightening & Refreshing Natural Cleanser</p>
+
+                    <p class="product-description">
+                        A daily, gentle exfoliating brightening face cleanser. It combines natural lemon extracts with organic coconut oil and shea butter to provide deep cleansing without drying your skin. Perfect for all skin types, this handcrafted soap removes impurities while maintaining your skin's natural moisture barrier.
+                    </p>
+
+                    <div class="product-features">
+                        <h3 class="features-title">Key Benefits</h3>
+                        <div class="features-list">
+                            <div class="feature-tag">
+                                <i class="fas fa-leaf"></i>
+                                100% Natural
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-sun"></i>
+                                Brightening
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-droplet"></i>
+                                Moisturizing
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-shield-alt"></i>
+                                Antibacterial
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-variants">
+                        <h3 class="variants-title">Choose Size</h3>
+                        <div class="size-options">
+                            <div class="size-option active" data-price="284" data-size="100g">
+                                1x 100g 
+                            </div>
+                            <div class="size-option" data-price="450" data-size="200g">
+                                2x 100g
+                            </div>
+                            <div class="size-option" data-price="650" data-size="300g">
+                                3x 100g
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="price-label">Price</div>
+                        <div class="price">
+                            <span class="price-currency">₹</span><span id="currentPrice">284</span>
+                        </div>
+                        <div class="price-offer">Free shipping on orders above ₹500</div>
+                    </div>
+
+                    <div class="purchase-section">
+                        <div class="quantity-selector">
+                            <span class="quantity-label">Quantity:</span>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" id="decreaseQty">-</button>
+                                <input type="number" class="quantity-input" id="quantity" value="1" min="1" max="10">
+                                <button class="quantity-btn" id="increaseQty">+</button>
+                            </div>
+                        </div>
+
+                        <button class="add-to-cart-btn" id="addToCartBtn">
+                            <i class="fas fa-shopping-bag"></i>
+                            ADD TO CART
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Information Section -->
+    <section class="product-info-section">
+        <div class="container">
+            <!-- Skin Type Section -->
+            <div class="info-card skin-type-card">
+                <div class="info-header expandable-trigger" data-target="skin-type-content">
+                    <h3 class="info-title">
+                        <i class="fas fa-user-check"></i>
+                        SKIN TYPE
+                    </h3>
+                    <i class="fas fa-plus expand-icon"></i>
+                </div>
+                <div class="info-content expandable-content" id="skin-type-content">
+                    <p class="skin-type-description">
+                        For all skin types, including dry and sensitive skin and around the eye area.
+                    </p>
+                    <div class="skin-types-grid">
+                        <div class="skin-type-item">
+                            <i class="fas fa-droplet"></i>
+                            <span>Dry Skin</span>
+                        </div>
+                        <div class="skin-type-item">
+                            <i class="fas fa-feather"></i>
+                            <span>Sensitive Skin</span>
+                        </div>
+                        <div class="skin-type-item">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Normal Skin</span>
+                        </div>
+                        <div class="skin-type-item">
+                            <i class="fas fa-tint"></i>
+                            <span>Oily Skin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Ingredients Section -->
+            <div class="info-card ingredients-card">
+                <div class="info-header expandable-trigger" data-target="ingredients-content">
+                    <h3 class="info-title">
+                        <i class="fas fa-leaf"></i>
+                        KEY INGREDIENTS
+                    </h3>
+                    <i class="fas fa-plus expand-icon"></i>
+                </div>
+                <div class="info-content expandable-content" id="ingredients-content">
+                    <div class="ingredients-list">
+                        <div class="ingredient-item">
+                            <div class="ingredient-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="ingredient-details">
+                                <h4>Matrixyl (Oligopeptides & Pentapeptides)</h4>
+                                <p>Advanced anti-aging peptides that stimulate collagen production and reduce fine lines.</p>
+                            </div>
+                        </div>
+                        <div class="ingredient-item">
+                            <div class="ingredient-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="ingredient-details">
+                                <h4>Ceramides</h4>
+                                <p>Essential lipids that strengthen the skin barrier and lock in moisture.</p>
+                            </div>
+                        </div>
+                        <div class="ingredient-item">
+                            <div class="ingredient-icon">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <div class="ingredient-details">
+                                <h4>Bisabolol (made from Chamomile)</h4>
+                                <p>Natural anti-inflammatory agent that soothes and calms irritated skin.</p>
+                            </div>
+                        </div>
+                        <div class="ingredient-item">
+                            <div class="ingredient-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <div class="ingredient-details">
+                                <h4>Shilajit</h4>
+                                <p>Mineral-rich compound that provides antioxidant protection and skin rejuvenation.</p>
+                            </div>
+                        </div>
+                        <div class="ingredient-item">
+                            <div class="ingredient-icon">
+                                <i class="fas fa-fish"></i>
+                            </div>
+                            <div class="ingredient-details">
+                                <h4>Squalene</h4>
+                                <p>Lightweight moisturizing agent that mimics skin's natural oils for deep hydration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Use Section -->
+            <div class="info-card usage-card">
+                <div class="info-header expandable-trigger" data-target="usage-content">
+                    <h3 class="info-title">
+                        <i class="fas fa-hands-wash"></i>
+                        HOW TO USE
+                    </h3>
+                    <i class="fas fa-plus expand-icon"></i>
+                </div>
+                <div class="info-content expandable-content" id="usage-content">
+                    <div class="usage-steps">
+                        <div class="usage-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Wet Your Hands</h4>
+                                <p>Start with clean, wet hands and warm water.</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Create Lather</h4>
+                                <p>Rub the soap between your palms to create a rich, creamy lather.</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Gentle Massage</h4>
+                                <p>Apply the lather to your face in circular motions, avoiding the eye area.</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Rinse Thoroughly</h4>
+                                <p>Rinse with lukewarm water and pat dry with a clean towel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usage-tips">
+                        <div class="tip-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Use twice daily for best results</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-thermometer-half"></i>
+                            <span>Store in a cool, dry place</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="info-card details-card">
+                <div class="info-header expandable-trigger" data-target="details-content">
+                    <h3 class="info-title">
+                        <i class="fas fa-info-circle"></i>
+                        PRODUCT DETAILS
+                    </h3>
+                    <i class="fas fa-minus expand-icon active"></i>
+                </div>
+                <div class="info-content expandable-content active" id="details-content">
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Anti-Aging Benefits</h4>
+                                <p>Promotes skin-firming look for ageless beauty.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-compress-arrows-alt"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Reduces Fine Lines</h4>
+                                <p>Softens the appearance of fine lines and wrinkles.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Deep Moisturization</h4>
+                                <p>Deeply moisturizes, soothes, and reduces signs of skin dullness.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Quick Absorption</h4>
+                                <p>Quick-absorbing formula provides moisture without oily residue.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-flower"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Essential Oils</h4>
+                                <p>Lightly scented with essential oils for a refreshing experience.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Cruelty-Free & Natural</h4>
+                                <p>No parabens, glycols, carbomers, silicones, artificial dyes, sulfates, phthalates or animal byproducts. Cruelty and toxin-free.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-box">
+                            <span class="logo-text">NEYO</span>
+                            <span class="logo-subtext">NATURALS</span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <span>8866110762</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@neyonaturals.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ahmedabad, Gujarat, India</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <a href="collection.html" data-page="collection.html">All Products</a>
+                        <a href="about-us.html" data-page="abour-us.html">About Us</a>
+                        <a href="policy.html" data-page="policy.html">Privacy Policy</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Neyo Naturals. All rights reserved.</p>
+                <p>Crafted with ❤️ for natural beauty</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assests\js\main.js"></script>
+    <script src="assests\js\products\product.js"></script>
+    <script src="assets/js/cart-manager.js"></script>
+    
+</body>
+</html>

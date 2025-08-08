@@ -1,0 +1,72 @@
+<!-- Cart Page -->
+    <main class="cart-page">
+        <div class="container">
+            <h1 class="page-title">Shopping Cart</h1>
+            
+            <div class="cart-container" id="cartContainer">
+                <!-- Cart Items Section -->
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <h2>Your Items</h2>
+                        <p class="items-count" id="itemsCount">3 items in your cart</p>
+                    </div>
+                    
+                    <div class="cart-items-list" id="cartItemsList">
+                        <!-- Cart items will be dynamically loaded here -->
+                    </div>
+                </div>
+
+                <!-- Cart Summary Section -->
+                <div class="cart-summary">
+                    <div class="summary-header">
+                        <h2>Order Summary</h2>
+                    </div>
+                    
+                    <div class="summary-line">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">₹977</span>
+                    </div>
+                    
+                    <div class="summary-line">
+                        <span>Shipping:</span>
+                        <span id="shipping">₹50</span>
+                    </div>
+                    
+                    <div class="summary-line">
+                        <span>Tax:</span>
+                        <span id="tax">₹51</span>
+                    </div>
+                    
+                    <div class="summary-line" id="discountLine" style="display: none;">
+                        <span>Discount:</span>
+                        <span id="discount" style="color: #27ae60;">-₹0</span>
+                    </div>
+                    
+                    <div class="summary-line total">
+                        <span>Total:</span>
+                        <span id="total">₹1,078</span>
+                    </div>
+                    
+                    <div class="discount-section">
+                        <h3>Apply Coupon</h3>
+                        <div class="coupon-input">
+                            <input type="text" id="couponCode" placeholder="Enter coupon code">
+                            <button class="apply-coupon-btn" onclick="applyCoupon()">Apply</button>
+                        </div>
+                        <div class="available-coupons">
+                            <span class="coupon-tag" onclick="applyCouponCode('SAVE10')">SAVE10</span>
+                            <span class="coupon-tag" onclick="applyCouponCode('FIRST20')">FIRST20</span>
+                            <span class="coupon-tag" onclick="applyCouponCode('NATURAL15')">NATURAL15</span>
+                        </div>
+                    </div>
+                    
+                    <button class="checkout-btn" onclick="proceedToCheckout()">
+                        <i class="fas fa-lock"></i> Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>

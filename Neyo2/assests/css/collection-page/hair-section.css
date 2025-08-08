@@ -1,0 +1,154 @@
+.soap-section .product-header {
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soap-section .product-icon {
+    font-size: 4rem;
+    color: white;
+    z-index: 2;
+}
+
+.soap-section .product-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.9);
+    color: #8b4d56;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Hair care specific gradients */
+.soap-section .argan-oil-shampoo { 
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); 
+}
+.soap-section .tea-tree-shampoo { 
+    background: linear-gradient(135deg, #a8e6cf 0%, #88d8a3 100%); 
+}
+.soap-section .keratin-conditioner { 
+    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%); 
+}
+.soap-section .coconut-conditioner { 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+}
+
+.soap-section .product-content {
+    padding: 25px;
+}
+
+.soap-section .product-name {
+    font-size: 1.4rem;
+    color: #8b4d56;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.soap-section .product-description {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.soap-section .product-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.soap-section .tag {
+    background: rgba(139, 90, 107, 0.1);
+    color: #8b4d56;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.soap-section .product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.soap-section .price {
+    font-size: 1.5rem;
+    color: #8b4d56;
+    font-weight: 700;
+}
+
+.soap-section .add-to-cart {
+    background: linear-gradient(135deg, #8b4d56 0%, #a0616a 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.soap-section .add-to-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139, 90, 107, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .soap-section .section-title {
+        font-size: 2rem;
+    }
+    
+    .soap-section .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .soap-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .soap-section .container {
+        padding: 0 15px;
+    }
+    
+    .soap-section .product-content {
+        padding: 20px;
+    }
+}
+
+/* Demo styles for cart count display */
+.cart-demo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #8b4d56;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-weight: 600;
+    z-index: 1000;
+}
+
+.cart-count {
+    background: #fff;
+    color: #8b4d56;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neyo Naturals Collection page</title>
+    <link rel="stylesheet" href="assests/css/header.css">
+    <link rel="stylesheet" href="assests/css/about.css">
+    <link rel="stylesheet" href="assests/css/collection-page/soap-section.css">
+    <link rel="stylesheet" href="assests/css/collection-page/face-section.css">
+    <link rel="stylesheet" href="assests/css/collection-page/body-section.css">
+    <link rel="stylesheet" href="assests/css/collection-page/hair-section.css">
+    <link rel="stylesheet" href="assests/css/footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-box">
+                        <a href="index.html">
+                            <img  src="https://placehold.co/200x70" alt="Neyo Naturals Logo" class="logo-image">
+                        </a>    
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Soaps</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="natural-bar-soap">
+                                            <div class="product-title">Natural Bar Soap</div>
+                                            <div class="product-description">Handcrafted with organic ingredients for gentle daily cleansing</div>
+                                        </div>
+                                        <div class="product-card" data-product="exfoliating-soap">
+                                            <div class="product-title">Exfoliating Soap</div>
+                                            <div class="product-description">Natural exfoliants for smooth, radiant skin</div>
+                                        </div>
+                                        <div class="product-card" data-product="moisturizing-soap">
+                                            <div class="product-title">Moisturizing Soap</div>
+                                            <div class="product-description">Enriched with shea butter and natural oils</div>
+                                        </div>
+                                        <div class="product-card" data-product="antibacterial-soap">
+                                            <div class="product-title">Antibacterial Soap</div>
+                                            <div class="product-description">Natural antimicrobial properties with tea tree oil</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Facial Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="daily-cleanser">
+                                            <div class="product-title">Daily Cleanser</div>
+                                            <div class="product-description">Gentle foam cleanser for daily use</div>
+                                        </div>
+                                        <div class="product-card" data-product="face-serum">
+                                            <div class="product-title">Face Serum</div>
+                                            <div class="product-description">Anti-aging serum with natural botanicals</div>
+                                        </div>
+                                        <div class="product-card" data-product="moisturizer">
+                                            <div class="product-title">Moisturizer</div>
+                                            <div class="product-description">Hydrating cream for all skin types</div>
+                                        </div>
+                                        <div class="product-card" data-product="face-mask">
+                                            <div class="product-title">Face Mask</div>
+                                            <div class="product-description">Deep cleansing clay mask</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Body Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="body-lotion">
+                                            <div class="product-title">Body Lotion</div>
+                                            <div class="product-description">Rich, nourishing formula for soft skin</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-scrub">
+                                            <div class="product-title">Body Scrub</div>
+                                            <div class="product-description">Exfoliating scrub with natural sea salt</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-oil">
+                                            <div class="product-title">Body Oil</div>
+                                            <div class="product-description">Luxurious oil blend for deep moisturizing</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-butter">
+                                            <div class="product-title">Body Butter</div>
+                                            <div class="product-description">Intense hydration for dry skin</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Hair Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="natural-shampoo">
+                                            <div class="product-title">Natural Shampoo</div>
+                                            <div class="product-description">Sulfate-free formula for healthy hair</div>
+                                        </div>
+                                        <div class="product-card" data-product="conditioner">
+                                            <div class="product-title">Conditioner</div>
+                                            <div class="product-description">Deep conditioning treatment</div>
+                                        </div>
+                                        <div class="product-card" data-product="hair-oil">
+                                            <div class="product-title">Hair Oil</div>
+                                            <div class="product-description">Nourishing oil for hair growth</div>
+                                        </div>
+                                        <div class="product-card" data-product="hair-mask">
+                                            <div class="product-title">Hair Mask</div>
+                                            <div class="product-description">Weekly intensive treatment</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </div>
+
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Soaps</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="natural-bar-soap">
+                    <div class="mobile-product-title">Natural Bar Soap</div>
+                    <div class="mobile-product-description">Handcrafted with organic ingredients</div>
+                </div>
+                <div class="mobile-product-card" data-product="exfoliating-soap">
+                    <div class="mobile-product-title">Exfoliating Soap</div>
+                    <div class="mobile-product-description">Natural exfoliants for smooth skin</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Facial Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="daily-cleanser">
+                    <div class="mobile-product-title">Daily Cleanser</div>
+                    <div class="mobile-product-description">Gentle foam cleanser</div>
+                </div>
+                <div class="mobile-product-card" data-product="face-serum">
+                    <div class="mobile-product-title">Face Serum</div>
+                    <div class="mobile-product-description">Anti-aging serum</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Body Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="body-lotion">
+                    <div class="mobile-product-title">Body Lotion</div>
+                    <div class="mobile-product-description">Rich, nourishing formula</div>
+                </div>
+                <div class="mobile-product-card" data-product="body-scrub">
+                    <div class="mobile-product-title">Body Scrub</div>
+                    <div class="mobile-product-description">Exfoliating sea salt scrub</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Hair Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="natural-shampoo">
+                    <div class="mobile-product-title">Natural Shampoo</div>
+                    <div class="mobile-product-description">Sulfate-free formula</div>
+                </div>
+                <div class="mobile-product-card" data-product="conditioner">
+                    <div class="mobile-product-title">Conditioner</div>
+                    <div class="mobile-product-description">Deep conditioning treatment</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacing" style="height: 50px;"></div>
+
+    <!-- Soap Section -->
+    <section class="soap-section" id="soaps">
+        <section class="soap-products">
+            <div class="container">
+                <h2 class="section-title">Natural Soaps</h2>
+                <p class="section-subtitle">Handcrafted soaps made with premium organic ingredients for gentle, nourishing cleansing</p>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-header lemon">
+                            <div class="product-badge">Popular</div>
+                            <div class="product-icon">🍋</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Lemon Soap</h3>
+                            <p class="product-description">Refreshing lemon essential oil with vitamin C for brightening and deep cleansing</p>
+                            <div class="product-tags">
+                                <span class="tag">Brightening</span>
+                                <span class="tag">Vitamin C</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹299</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-header aloe-vera">
+                            <div class="product-badge">Bestseller</div>
+                            <div class="product-icon">🌿</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Aloe Vera Soap</h3>
+                            <p class="product-description">Soothing aloe vera extract with natural moisturizers for sensitive skin care</p>
+                            <div class="product-tags">
+                                <span class="tag">Soothing</span>
+                                <span class="tag">Moisturizing</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹329</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-header rose">
+                            <div class="product-badge">Premium</div>
+                            <div class="product-icon">🌹</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Rose Soap</h3>
+                            <p class="product-description">Luxurious rose petals with rose oil for anti-aging and romantic fragrance</p>
+                            <div class="product-tags">
+                                <span class="tag">Anti-Aging</span>
+                                <span class="tag">Luxurious</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹379</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-header multani-mitti">
+                            <div class="product-badge">New</div>
+                            <div class="product-icon">🏺</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Multani Mitti Soap</h3>
+                            <p class="product-description">Traditional Fuller's earth clay for deep pore cleansing and oil control</p>
+                            <div class="product-tags">
+                                <span class="tag">Deep Cleansing</span>
+                                <span class="tag">Oil Control</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹349</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="spacing" style="height: 50px;"></div>
+
+    <!-- Face Care Section -->
+    <section class="soap-section" >
+        <section class="face-care-products">
+            <div class="container">
+                <h2 class="section-title">Face Care Collection</h2>
+                <p class="section-subtitle">Nourish and pamper your skin with our premium face care products</p>
+                
+                <div class="products-grid">
+                    <!-- Gentle Face Wash -->
+                    <div class="product-card">
+                        <div class="product-header gentle-face-wash">
+                            <i class="fas fa-sparkles product-icon"></i>
+                            <div class="product-badge">Gentle</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Gentle Face Wash</h3>
+                            <p class="product-description">A mild, sulfate-free cleanser perfect for sensitive skin. Removes impurities while maintaining your skin's natural moisture barrier.</p>
+                            <div class="product-tags">
+                                <span class="tag">Sensitive Skin</span>
+                                <span class="tag">Sulfate-Free</span>
+                                <span class="tag">pH Balanced</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹299</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Oily Skin Face Wash -->
+                    <div class="product-card">
+                        <div class="product-header oily-skin-wash">
+                            <i class="fas fa-tint product-icon"></i>
+                            <div class="product-badge">Oil Control</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Oily Skin Face Wash</h3>
+                            <p class="product-description">Deep cleansing formula with salicylic acid that controls excess oil and prevents breakouts while keeping skin refreshed.</p>
+                            <div class="product-tags">
+                                <span class="tag">Oil Control</span>
+                                <span class="tag">Salicylic Acid</span>
+                                <span class="tag">Anti-Acne</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹349</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Moisturizer -->
+                    <div class="product-card">
+                        <div class="product-header moisturizer">
+                            <i class="fas fa-heart product-icon"></i>
+                            <div class="product-badge">Hydrating</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Daily Moisturizer</h3>
+                            <p class="product-description">Lightweight, non-greasy formula with hyaluronic acid and vitamin E that provides 24-hour hydration for soft, supple skin.</p>
+                            <div class="product-tags">
+                                <span class="tag">24hr Hydration</span>
+                                <span class="tag">Hyaluronic Acid</span>
+                                <span class="tag">Vitamin E</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹449</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Face Scrub -->
+                    <div class="product-card">
+                        <div class="product-header face-scrub">
+                            <i class="fas fa-gem product-icon"></i>
+                            <div class="product-badge">Exfoliating</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Exfoliating Face Scrub</h3>
+                            <p class="product-description">Gentle micro-beads remove dead skin cells and unclog pores, revealing brighter, smoother skin with a natural glow.</p>
+                            <div class="product-tags">
+                                <span class="tag">Exfoliating</span>
+                                <span class="tag">Pore Cleansing</span>
+                                <span class="tag">Brightening</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹399</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="spacing" style="height: 50px;"></div>
+
+    <!-- Body Care Section -->
+    <section class="soap-section">
+        <section class="body-care-products">
+            <div class="container">
+                <h2 class="section-title">Body Care Essentials</h2>
+                <p class="section-subtitle">Luxurious body care products to pamper and nourish your skin from head to toe</p>
+                
+                <div class="products-grid">
+                    <!-- Lavender Shower Gel -->
+                    <div class="product-card">
+                        <div class="product-header lavender-shower-gel">
+                            <i class="fas fa-shower product-icon"></i>
+                            <div class="product-badge">Relaxing</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Lavender Shower Gel</h3>
+                            <p class="product-description">Indulge in a calming shower experience with our lavender-infused gel. Creates rich, creamy lather while the soothing scent relaxes your mind and body.</p>
+                            <div class="product-tags">
+                                <span class="tag">Lavender Oil</span>
+                                <span class="tag">Relaxing</span>
+                                <span class="tag">Rich Lather</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹399</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vanilla Shower Gel -->
+                    <div class="product-card">
+                        <div class="product-header vanilla-shower-gel">
+                            <i class="fas fa-soap product-icon"></i>
+                            <div class="product-badge">Sweet Scent</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Vanilla Shower Gel</h3>
+                            <p class="product-description">Sweet vanilla fragrance with moisturizing properties. Gentle formula cleanses while leaving your skin soft, smooth, and delicately scented all day long.</p>
+                            <div class="product-tags">
+                                <span class="tag">Vanilla Extract</span>
+                                <span class="tag">Moisturizing</span>
+                                <span class="tag">Long-lasting</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹429</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shea Butter Body Lotion -->
+                    <div class="product-card">
+                        <div class="product-header shea-butter-lotion">
+                            <i class="fas fa-pump-soap product-icon"></i>
+                            <div class="product-badge">Nourishing</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Shea Butter Body Lotion</h3>
+                            <p class="product-description">Ultra-rich formula with pure shea butter deeply moisturizes and repairs dry skin. Fast-absorbing, non-greasy texture provides lasting hydration and comfort.</p>
+                            <div class="product-tags">
+                                <span class="tag">Shea Butter</span>
+                                <span class="tag">Deep Moisturizing</span>
+                                <span class="tag">Fast Absorbing</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹549</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coconut Body Lotion -->
+                    <div class="product-card">
+                        <div class="product-header coconut-lotion">
+                            <i class="fas fa-leaf product-icon"></i>
+                            <div class="product-badge">Tropical</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name">Coconut Body Lotion</h3>
+                            <p class="product-description">Tropical coconut oil blend provides intensive moisture and natural protection. Light, refreshing texture with exotic fragrance transports you to paradise.</p>
+                            <div class="product-tags">
+                                <span class="tag">Coconut Oil</span>
+                                <span class="tag">Natural Protection</span>
+                                <span class="tag">Tropical Scent</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">₹499</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="spacing" style="height: 50px;"></div>
+
+    <!-- Hair Care Section -->
+    <section class="soap-section">
+        <div class="container">
+            <h2 class="section-title">Hair Care Collection</h2>
+            <p class="section-subtitle">Professional hair care products for healthy, beautiful hair from root to tip</p>
+            
+            <div class="products-grid">
+                <!-- Argan Oil Shampoo -->
+                <div class="product-card">
+                    <div class="product-header argan-oil-shampoo">
+                        <i class="fas fa-bottle-droplet product-icon"></i>
+                        <div class="product-badge">Nourishing</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Argan Oil Shampoo</h3>
+                        <p class="product-description">Luxurious shampoo enriched with pure Moroccan argan oil. Gently cleanses while deeply nourishing dry and damaged hair for silky, manageable locks.</p>
+                        <div class="product-tags">
+                            <span class="tag">Argan Oil</span>
+                            <span class="tag">Dry Hair</span>
+                            <span class="tag">Sulfate-Free</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₹649</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tea Tree Shampoo -->
+                <div class="product-card">
+                    <div class="product-header tea-tree-shampoo">
+                        <i class="fas fa-seedling product-icon"></i>
+                        <div class="product-badge">Anti-Dandruff</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Tea Tree Shampoo</h3>
+                        <p class="product-description">Therapeutic tea tree oil formula effectively treats dandruff and scalp irritation. Refreshing mint sensation leaves hair clean, fresh, and flake-free.</p>
+                        <div class="product-tags">
+                            <span class="tag">Tea Tree Oil</span>
+                            <span class="tag">Anti-Dandruff</span>
+                            <span class="tag">Scalp Care</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₹599</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keratin Conditioner -->
+                <div class="product-card">
+                    <div class="product-header keratin-conditioner">
+                        <i class="fas fa-magic product-icon"></i>
+                        <div class="product-badge">Repairing</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Keratin Repair Conditioner</h3>
+                        <p class="product-description">Advanced keratin formula penetrates deep into hair fibers to repair damage and strengthen from within. Transforms brittle hair into smooth, resilient strands.</p>
+                        <div class="product-tags">
+                            <span class="tag">Keratin Complex</span>
+                            <span class="tag">Damage Repair</span>
+                            <span class="tag">Strengthening</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₹749</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coconut Milk Conditioner -->
+                <div class="product-card">
+                    <div class="product-header coconut-conditioner">
+                        <i class="fas fa-heart product-icon"></i>
+                        <div class="product-badge">Hydrating</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Coconut Milk Conditioner</h3>
+                        <p class="product-description">Rich coconut milk and natural proteins provide intense hydration for all hair types. Lightweight formula detangles and adds lustrous shine without weighing hair down.</p>
+                        <div class="product-tags">
+                            <span class="tag">Coconut Milk</span>
+                            <span class="tag">All Hair Types</span>
+                            <span class="tag">Shine Boost</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₹699</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-box">
+                            <span class="logo-text">NEYO</span>
+                            <span class="logo-subtext">NATURALS</span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <span>8866110762</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@neyonaturals.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ahmedabad, Gujarat, India</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <a href="collection.html" data-page="collection.html">All Products</a>
+                        <a href="about-us.html" data-page="abour-us.html">About Us</a>
+                        <a href="policy.html" data-page="policy.html">Privacy Policy</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Neyo Naturals. All rights reserved.</p>
+                <p>Crafted with ❤️ for natural beauty</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assests\js\main.js"></script>
+    <script src="assests\js\collection-apge\soap-section.js"></script>
+    <script src="assests\js\collection-apge\face-section.js"></script>
+    <script src="assests\js\collection-apge\hair-section.js"></script>
+    <script src="assests\js\collection-apge\body-section.js"></script>
+    <script src="assets/js/cart-manager.js"></script>
+</body>
+</html>

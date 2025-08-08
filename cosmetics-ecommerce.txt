@@ -1,0 +1,77 @@
+cosmetics-ecommerce/
+├── app.py                          # Main Flask application
+├── config.py                       # Configuration settings
+├── requirements.txt                # Python dependencies
+├── .env                           # Environment variables (API keys, secrets)
+├── .gitignore                     # Git ignore file
+├── migrations/                     # Database migration files
+│   └── versions/
+├── instance/                      # Instance-specific files
+│   └── database.db               # SQLite database file
+├── static/                        # Static assets
+│   ├── css/
+│   │   ├── main.css              # Global styles
+│   │   ├── products.css          # Product-specific styles
+│   │   ├── auth.css              # Login/register styles
+│   │   └── admin.css             # Admin panel styles
+│   ├── js/
+│   │   ├── main.js               # Global JavaScript
+│   │   ├── cart.js               # Cart functionality
+│   │   ├── products.js           # Product interactions
+│   │   ├── auth.js               # Authentication helpers
+│   │   ├── payment.js            # Razorpay integration
+│   │   └── admin.js              # Admin panel functionality
+│   ├── images/
+│   │   ├── products/             # Product images
+│   │   ├── banners/              # Homepage banners
+│   │   └── icons/                # UI icons
+│   └── uploads/                  # User uploaded files
+├── templates/                     # HTML templates
+│   ├── base.html                 # Base template with nav/footer
+│   ├── index.html                # Homepage
+│   ├── auth/
+│   │   ├── login.html            # Login page
+│   │   ├── register.html         # Registration page
+│   │   └── profile.html          # User profile
+│   ├── products/
+│   │   ├── products.html         # All products page
+│   │   ├── product.html          # Single product page
+│   │   └── search.html           # Search results
+│   ├── cart/
+│   │   ├── cart.html             # Shopping cart
+│   │   └── checkout.html         # Checkout page
+│   ├── orders/
+│   │   ├── order_success.html    # Order confirmation
+│   │   └── order_history.html    # User's order history
+│   ├── pages/
+│   │   ├── about.html            # About us
+│   │   ├── policies.html         # Return/privacy policies
+│   │   └── contact.html          # Contact page
+│   └── admin/
+│       ├── dashboard.html        # Admin dashboard
+│       ├── products.html         # Manage products
+│       ├── orders.html           # Manage orders
+│       └── users.html            # Manage users
+├── models/                       # Database models
+│   ├── __init__.py
+│   ├── user.py                   # User model
+│   ├── product.py                # Product model
+│   ├── order.py                  # Order model
+│   └── category.py               # Category model
+├── routes/                       # Route handlers
+│   ├── __init__.py
+│   ├── main.py                   # Main routes (home, about, etc.)
+│   ├── auth.py                   # Authentication routes
+│   ├── products.py               # Product routes
+│   ├── cart.py                   # Cart routes
+│   ├── orders.py                 # Order routes
+│   └── admin.py                  # Admin routes
+├── utils/                        # Utility functions
+│   ├── __init__.py
+│   ├── decorators.py             # Custom decorators
+│   ├── helpers.py                # Helper functions
+│   └── email.py                  # Email functionality
+└── tests/                        # Test files
+    ├── test_auth.py
+    ├── test_products.py
+    └── test_orders.py

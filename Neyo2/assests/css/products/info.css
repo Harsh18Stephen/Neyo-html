@@ -1,0 +1,554 @@
+/* Product Info Section */
+        .product-info-section {
+            width: 100%;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #fefefe 0%, #f8f1f4 50%, #fefefe 100%);
+            position: relative;
+        }
+
+        .product-info-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(160,97,106,0.2), transparent);
+        }
+
+        /* Info Cards */
+        .info-card {
+            background: #fff;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(160,97,106,0.08);
+            border: 1px solid rgba(160,97,106,0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            box-shadow: 0 12px 40px rgba(160,97,106,0.12);
+            transform: translateY(-2px);
+        }
+
+        .info-header {
+            background: linear-gradient(135deg, #a0616a, #8b4d56);
+            color: #fff;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .info-header:hover {
+            background: linear-gradient(135deg, #8b4d56, #7a434a);
+        }
+
+        .info-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .info-title i {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .expand-icon {
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .expand-icon.active {
+            transform: rotate(45deg);
+        }
+
+        .info-content {
+            padding: 2rem;
+        }
+
+        /* Skin Type Card */
+        .skin-type-description {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .skin-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skin-type-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, #f8f1f4, #e8d5d9);
+            border-radius: 12px;
+            color: #8b4d56;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .skin-type-item:hover {
+            background: linear-gradient(135deg, #e8d5d9, #d4bfc4);
+            transform: translateY(-2px);
+        }
+
+        .skin-type-item i {
+            font-size: 1.2rem;
+            color: #a0616a;
+        }
+
+        /* Expandable Content */
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            padding: 0 2rem;
+        }
+
+        .expandable-content.active {
+            max-height: 1000px;
+            padding: 2rem;
+        }
+
+        /* Ingredients */
+        .ingredients-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .ingredient-item {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #fafafa, #f8f1f4);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .ingredient-item:hover {
+            background: linear-gradient(135deg, #f8f1f4, #e8d5d9);
+            transform: translateX(5px);
+        }
+
+        .ingredient-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #a0616a, #8b4d56);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .ingredient-details h4 {
+            color: #8b4d56;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .ingredient-details p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Usage Steps */
+        .usage-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .usage-step {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #a0616a, #8b4d56);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #8b4d56;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .usage-tips {
+            display: flex;
+            gap: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f8f1f4, #e8d5d9);
+            border-radius: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tip-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #8b4d56;
+            font-weight: 500;
+        }
+
+        .tip-item i {
+            color: #a0616a;
+            font-size: 1.1rem;
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #fafafa, #f8f1f4);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            background: linear-gradient(135deg, #f8f1f4, #e8d5d9);
+            transform: translateY(-2px);
+        }
+
+        .benefit-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #a0616a, #8b4d56);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .benefit-text h4 {
+            color: #8b4d56;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-text p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .skin-types-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-info-section {
+                padding: 2.5rem 0;
+            }
+
+            .container {
+                padding: 0 15px;
+                max-width: 100%;
+            }
+
+            .info-card {
+                margin-bottom: 1.5rem;
+                border-radius: 15px;
+            }
+
+            .info-header {
+                padding: 1.2rem 1.5rem;
+            }
+
+            .info-content {
+                padding: 0;
+            }
+
+            /* Fix expandable content overflow */
+            .expandable-content {
+                max-height: 0;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+            }
+
+            .expandable-content.active {
+                max-height: none;
+                overflow: visible;
+                padding: 1.5rem;
+                margin: 0;
+            }
+
+            .skin-types-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .usage-tips {
+                flex-direction: column;
+                gap: 1rem;
+                margin: 0;
+            }
+
+            .ingredient-item,
+            .benefit-item {
+                flex-direction: row;
+                align-items: flex-start;
+                text-align: left;
+                gap: 1rem;
+                padding: 1.2rem;
+            }
+
+            .ingredient-icon,
+            .benefit-icon {
+                flex-shrink: 0;
+                align-self: flex-start;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .ingredient-details h4,
+            .benefit-text h4 {
+                font-size: 1rem;
+                margin-bottom: 0.4rem;
+            }
+
+            .ingredient-details p,
+            .benefit-text p {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+
+            .usage-steps {
+                gap: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .usage-step {
+                gap: 1rem;
+            }
+
+            .step-number {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+            }
+
+            .step-content h4 {
+                font-size: 1rem;
+            }
+
+            .step-content p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-info-section {
+                padding: 2rem 0;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            .info-card {
+                border-radius: 12px;
+                margin-bottom: 1rem;
+            }
+
+            .info-title {
+                font-size: 0.95rem;
+                gap: 0.6rem;
+                letter-spacing: 0.5px;
+            }
+
+            .info-header {
+                padding: 1rem 1.2rem;
+            }
+
+            .expandable-content.active {
+                padding: 1.2rem;
+            }
+
+            .skin-type-description {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .skin-type-item {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .skin-type-item i {
+                font-size: 1rem;
+            }
+
+            .ingredient-item,
+            .benefit-item {
+                padding: 1rem;
+                border-radius: 12px;
+            }
+
+            .ingredient-icon,
+            .benefit-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+            }
+
+            .ingredient-details h4,
+            .benefit-text h4 {
+                font-size: 0.95rem;
+            }
+
+            .ingredient-details p,
+            .benefit-text p {
+                font-size: 0.85rem;
+            }
+
+            .usage-step {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 0.8rem;
+            }
+
+            .step-number {
+                width: 30px;
+                height: 30px;
+                font-size: 0.85rem;
+            }
+
+            .step-content h4 {
+                font-size: 0.95rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .step-content p {
+                font-size: 0.85rem;
+            }
+
+            .usage-tips {
+                padding: 1.2rem;
+                border-radius: 10px;
+            }
+
+            .tip-item {
+                font-size: 0.85rem;
+                gap: 0.6rem;
+            }
+
+            .tip-item i {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .container {
+                padding: 0 8px;
+            }
+
+            .info-header {
+                padding: 0.8rem 1rem;
+            }
+
+            .expandable-content.active {
+                padding: 1rem;
+            }
+
+            .info-title {
+                font-size: 0.9rem;
+            }
+
+            .skin-type-item {
+                padding: 0.7rem 1rem;
+                font-size: 0.85rem;
+            }
+
+            .ingredient-item,
+            .benefit-item {
+                padding: 0.8rem;
+                gap: 0.8rem;
+            }
+
+            .ingredient-icon,
+            .benefit-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Animation */
+        .info-card {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .info-card:nth-child(1) { animation-delay: 0.1s; }
+        .info-card:nth-child(2) { animation-delay: 0.2s; }
+        .info-card:nth-child(3) { animation-delay: 0.3s; }
+        .info-card:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }

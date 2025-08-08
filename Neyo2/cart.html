@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neyo Cart </title>
+    <link rel="stylesheet" href="assests/css/header.css">
+    <link rel="stylesheet" href="assests/css/cart/cart.css">
+    <link rel="stylesheet" href="assests/css/about.css">
+    <link rel="stylesheet" href="assests/css/footer.css">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-box">
+                        <a href="index.html">
+                            <img  src="https://placehold.co/200x70" alt="Neyo Naturals Logo" class="logo-image">
+                        </a>    
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Soaps</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="natural-bar-soap">
+                                            <div class="product-title">Natural Lemon Soap</div>
+                                            <div class="product-description">Handcrafted with organic ingredients for gentle daily cleansing</div>
+                                        </div>
+                                        <div class="product-card" data-product="exfoliating-soap">
+                                            <div class="product-title">Natural Rose Soap</div>
+                                            <div class="product-description">Natural exfoliants for smooth, radiant skin</div>
+                                        </div>
+                                        <div class="product-card" data-product="moisturizing-soap">
+                                            <div class="product-title">Natural Aloe-Vera Soap</div>
+                                            <div class="product-description">Enriched with shea butter and natural oils</div>
+                                        </div>
+                                        <div class="product-card" data-product="antibacterial-soap">
+                                            <div class="product-title">Natural Multani-Matti Soap</div>
+                                            <div class="product-description">Natural antimicrobial properties with tea tree oil</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Facial Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="daily-cleanser">
+                                            <div class="product-title">Gentle Face Wash</div>
+                                            <div class="product-description">Gentle foam cleanser for daily use</div>
+                                        </div>
+                                        <div class="product-card" data-product="face-serum">
+                                            <div class="product-title">Oily Skin Face Wash</div>
+                                            <div class="product-description">Anti-aging serum with natural botanicals</div>
+                                        </div>
+                                        <div class="product-card" data-product="moisturizer">
+                                            <div class="product-title">Face Moisturizer</div>
+                                            <div class="product-description">Hydrating cream for all skin types</div>
+                                        </div>
+                                        <div class="product-card" data-product="face-mask">
+                                            <div class="product-title">Face Scrub</div>
+                                            <div class="product-description">Deep cleansing clay mask</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Body Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="body-lotion">
+                                            <div class="product-title">Shower Gel1</div>
+                                            <div class="product-description">Rich, nourishing formula for soft skin</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-scrub">
+                                            <div class="product-title">Shower Gel2</div>
+                                            <div class="product-description">Exfoliating scrub with natural sea salt</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-oil">
+                                            <div class="product-title">Body Lotion1</div>
+                                            <div class="product-description">Luxurious oil blend for deep moisturizing</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-butter">
+                                            <div class="product-title">Body Lotion2</div>
+                                            <div class="product-description">Intense hydration for dry skin</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Hair Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="natural-shampoo">
+                                            <div class="product-title">Natural Shampoo1</div>
+                                            <div class="product-description">Sulfate-free formula for healthy hair</div>
+                                        </div>
+                                        <div class="product-card" data-product="conditioner">
+                                            <div class="product-title">Natural Shampoo2</div>
+                                            <div class="product-description">Deep conditioning treatment</div>
+                                        </div>
+                                        <div class="product-card" data-product="hair-oil">
+                                            <div class="product-title">Conditioner 1</div>
+                                            <div class="product-description">Nourishing oil for hair growth</div>
+                                        </div>
+                                        <div class="product-card" data-product="hair-mask">
+                                            <div class="product-title">Conditioner 2</div>
+                                            <div class="product-description">Weekly intensive treatment</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </div>
+
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Soaps</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="natural-bar-soap">
+                    <div class="mobile-product-title">Natural Bar Soap</div>
+                    <div class="mobile-product-description">Handcrafted with organic ingredients</div>
+                </div>
+                <div class="mobile-product-card" data-product="exfoliating-soap">
+                    <div class="mobile-product-title">Exfoliating Soap</div>
+                    <div class="mobile-product-description">Natural exfoliants for smooth skin</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Facial Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="daily-cleanser">
+                    <div class="mobile-product-title">Daily Cleanser</div>
+                    <div class="mobile-product-description">Gentle foam cleanser</div>
+                </div>
+                <div class="mobile-product-card" data-product="face-serum">
+                    <div class="mobile-product-title">Face Serum</div>
+                    <div class="mobile-product-description">Anti-aging serum</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Body Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="body-lotion">
+                    <div class="mobile-product-title">Body Lotion</div>
+                    <div class="mobile-product-description">Rich, nourishing formula</div>
+                </div>
+                <div class="mobile-product-card" data-product="body-scrub">
+                    <div class="mobile-product-title">Body Scrub</div>
+                    <div class="mobile-product-description">Exfoliating sea salt scrub</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Hair Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="natural-shampoo">
+                    <div class="mobile-product-title">Natural Shampoo</div>
+                    <div class="mobile-product-description">Sulfate-free formula</div>
+                </div>
+                <div class="mobile-product-card" data-product="conditioner">
+                    <div class="mobile-product-title">Conditioner</div>
+                    <div class="mobile-product-description">Deep conditioning treatment</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <main class="cart-page">
+        <div class="container">
+            <h1 class="page-title">Shopping Cart</h1>
+            
+            <div class="cart-container" id="cartContainer">
+                <!-- Cart Items Section -->
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <h2>Your Items</h2>
+                        <p class="items-count" id="itemsCount">items in your cart</p>
+                    </div>
+                    
+                    <div class="cart-items-list" id="cartItemsList">
+                        <!-- Cart items will be dynamically loaded here -->
+                    </div>
+                </div>
+
+                <!-- Cart Summary Section -->
+                <div class="cart-summary">
+                    <div class="summary-header">
+                        <h2>Order Summary</h2>
+                    </div>
+                    
+                    <div class="summary-line">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">₹977</span>
+                    </div>
+                    
+                    <div class="summary-line">
+                        <span>Shipping:</span>
+                        <span id="shipping">₹50</span>
+                    </div>
+                    
+                    <div class="summary-line">
+                        <span>Tax:</span>
+                        <span id="tax">₹51</span>
+                    </div>
+                    
+                    <div class="summary-line" id="discountLine" style="display: none;">
+                        <span>Discount:</span>
+                        <span id="discount" style="color: #27ae60;">-₹0</span>
+                    </div>
+                    
+                    <div class="summary-line total">
+                        <span>Total:</span>
+                        <span id="total">₹1,078</span>
+                    </div>
+                    
+                    <div class="discount-section">
+                        <h3>Apply Coupon</h3>
+                        <div class="coupon-input">
+                            <input type="text" id="couponCode" placeholder="Enter coupon code">
+                            <button class="apply-coupon-btn" onclick="applyCoupon()">Apply</button>
+                        </div>
+                        <div class="available-coupons">
+                            <span class="coupon-tag" onclick="applyCouponCode('SAVE10')">SAVE10</span>
+                            <span class="coupon-tag" onclick="applyCouponCode('FIRST20')">FIRST20</span>
+                            <span class="coupon-tag" onclick="applyCouponCode('NATURAL15')">NATURAL15</span>
+                        </div>
+                    </div>
+                    
+                    <button class="checkout-btn" onclick="proceedToCheckout()">
+                        <i class="fas fa-lock"></i> Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+   
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div id="loadingText">Loading products...</div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-box">
+                            <span class="logo-text">NEYO</span>
+                            <span class="logo-subtext">NATURALS</span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <span>8866110762</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@neyonaturals.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ahmedabad, Gujarat, India</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <a href="collection.html" data-page="collection.html">All Products</a>
+                        <a href="about-us.html" data-page="abour-us.html">About Us</a>
+                        <a href="policy.html" data-page="policy.html">Privacy Policy</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Neyo Naturals. All rights reserved.</p>
+                <p>Crafted with ❤️ for natural beauty</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assests/js/main.js"></script>
+    <script src="assests/js/cart/cart.js"></script>
+    <script src="assets/js/cart-manager.js"></script>
+
+    <script>
+        // Cart Page Functions
+        if (window.location.pathname.includes('cart.html') || document.getElementById('cartContainer')) {
+            let appliedCoupon = null;
+            const coupons = {
+                'SAVE10': { discount: 10, type: 'percentage' },
+                'FIRST20': { discount: 20, type: 'percentage' },
+                'NATURAL15': { discount: 15, type: 'percentage' }
+            };
+
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log('Cart page loaded'); // Debug log
+                renderCartPage();
+                updateCartSummary();
+            });
+
+            function renderCartPage() {
+                const cartItems = getCart();
+                const cartItemsList = document.getElementById('cartItemsList');
+                const cartContainer = document.getElementById('cartContainer');
+                
+                console.log('Cart items:', cartItems); // Debug log
+                
+                if (!cartItems || cartItems.length === 0) {
+                    cartContainer.innerHTML = `
+                        <div class="empty-cart fade-in">
+                            <div class="empty-cart-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <h2>Your cart is empty</h2>
+                            <p>Looks like you haven't added any natural beauty products yet.</p>
+                            <a href="index.html" class="continue-shopping-btn">
+                                <i class="fas fa-leaf"></i> Start Shopping
+                            </a>
+                        </div>
+                    `;
+                    return;
+                }
+
+                if (cartItemsList) {
+                    cartItemsList.innerHTML = cartItems.map(item => `
+                        <div class="cart-item fade-in" data-item-id="${item.id}">
+                            <div class="item-image ${item.image}">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-name">${item.name}</h3>
+                                <p class="item-description">${item.description}</p>
+                                <div class="item-benefits">
+                                    ${item.benefits.map(benefit => `<span class="benefit">${benefit}</span>`).join('')}
+                                </div>
+                            </div>
+                            <div class="item-controls">
+                                <div class="item-price">₹${item.price}</div>
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn" onclick="changeQuantity('${item.id}', -1)" ${item.quantity <= 1 ? 'disabled' : ''}>
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <span class="quantity">${item.quantity}</span>
+                                    <button class="quantity-btn" onclick="changeQuantity('${item.id}', 1)">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                                <button class="remove-btn" onclick="removeFromCart('${item.id}')" title="Remove item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    `).join('');
+                }
+
+                updateItemsCount();
+            }
+
+            function changeQuantity(itemId, change) {
+                const cart = getCart();
+                const item = cart.find(item => item.id === itemId);
+                
+                if (item) {
+                    item.quantity += change;
+                    if (item.quantity <= 0) {
+                        removeFromCart(itemId);
+                        return;
+                    }
+                    saveCart(cart);
+                    renderCartPage();
+                    updateCartSummary();
+                    showNotification(`Quantity updated`);
+                }
+            }
+
+            function removeFromCart(itemId) {
+                let cart = getCart();
+                const item = cart.find(item => item.id === itemId);
+                cart = cart.filter(item => item.id !== itemId);
+                saveCart(cart);
+                renderCartPage();
+                updateCartSummary();
+                if (item) {
+                    showNotification(`${item.name} removed from cart`);
+                }
+            }
+
+            function updateItemsCount() {
+                const cart = getCart();
+                const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                const itemsCountElement = document.getElementById('itemsCount');
+                if (itemsCountElement) {
+                    itemsCountElement.textContent = `${totalItems} item${totalItems !== 1 ? 's' : ''} in your cart`;
+                }
+            }
+
+            function updateCartSummary() {
+                const cart = getCart();
+                const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                const shipping = cart.length > 0 ? 50 : 0;
+                const tax = Math.round(subtotal * 0.05);
+                
+                let discount = 0;
+                if (appliedCoupon && coupons[appliedCoupon]) {
+                    discount = Math.round(subtotal * (coupons[appliedCoupon].discount / 100));
+                }
+                
+                const total = subtotal + shipping + tax - discount;
+                
+                // Update elements if they exist
+                const subtotalEl = document.getElementById('subtotal');
+                const shippingEl = document.getElementById('shipping');
+                const taxEl = document.getElementById('tax');
+                const totalEl = document.getElementById('total');
+                const discountLine = document.getElementById('discountLine');
+                const discountEl = document.getElementById('discount');
+                
+                if (subtotalEl) subtotalEl.textContent = `₹${subtotal}`;
+                if (shippingEl) shippingEl.textContent = cart.length > 0 ? `₹${shipping}` : 'Free';
+                if (taxEl) taxEl.textContent = `₹${tax}`;
+                if (totalEl) totalEl.textContent = `₹${total}`;
+                
+                if (discount > 0 && discountEl && discountLine) {
+                    discountEl.textContent = `-₹${discount}`;
+                    discountLine.style.display = 'flex';
+                } else if (discountLine) {
+                    discountLine.style.display = 'none';
+                }
+                
+                // Update checkout button
+                const checkoutBtn = document.querySelector('.checkout-btn');
+                if (checkoutBtn) {
+                    if (cart.length === 0) {
+                        checkoutBtn.disabled = true;
+                        checkoutBtn.innerHTML = '<i class="fas fa-shopping-bag"></i> Cart is Empty';
+                    } else {
+                        checkoutBtn.disabled = false;
+                        checkoutBtn.innerHTML = '<i class="fas fa-lock"></i> Proceed to Checkout';
+                    }
+                }
+            }
+
+            function applyCoupon() {
+                const couponInput = document.getElementById('couponCode');
+                if (couponInput) {
+                    const code = couponInput.value.trim().toUpperCase();
+                    applyCouponCode(code);
+                }
+            }
+
+            function applyCouponCode(code) {
+                const cart = getCart();
+                if (cart.length === 0) {
+                    showNotification('Add items to cart before applying coupon');
+                    return;
+                }
+                
+                if (coupons[code]) {
+                    appliedCoupon = code;
+                    const couponInput = document.getElementById('couponCode');
+                    if (couponInput) couponInput.value = code;
+                    updateCartSummary();
+                    showNotification(`Coupon ${code} applied! ${coupons[code].discount}% off`);
+                } else {
+                    showNotification('Invalid coupon code');
+                }
+            }
+
+            function proceedToCheckout() {
+                const cart = getCart();
+                if (cart.length === 0) {
+                    showNotification('Your cart is empty');
+                    return;
+                }
+                
+                const checkoutBtn = document.querySelector('.checkout-btn');
+                if (checkoutBtn) {
+                    const originalText = checkoutBtn.innerHTML;
+                    checkoutBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+                    checkoutBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        showNotification('Redirecting to checkout...');
+                        setTimeout(() => {
+                            checkoutBtn.innerHTML = originalText;
+                            checkoutBtn.disabled = false;
+                            // window.location.href = 'checkout.html';
+                        }, 2000);
+                    }, 1500);
+                }
+            }
+
+            // Make functions available globally
+            window.changeQuantity = changeQuantity;
+            window.removeFromCart = removeFromCart;
+            window.applyCoupon = applyCoupon;
+            window.applyCouponCode = applyCouponCode;
+            window.proceedToCheckout = proceedToCheckout;
+        }
+    </script>
+
+    
+   
+</body>
+</html>

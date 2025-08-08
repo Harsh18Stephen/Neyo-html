@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEYO Naturals </title>
+    <link rel="stylesheet" href="assests/css/header.css">
+    <link rel="stylesheet" href="assests/css/index-page/hero.css">
+    <link rel="stylesheet" href="assests/css/about.css">
+    <link rel="stylesheet" href="assests/css/index-page/best-seller.css">
+    <link rel="stylesheet" href="assests/css/footer.css">
+    <link rel="stylesheet" href="assests/css/index-page/collection.css">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-box">
+                        <a href="index.html">
+                            <img  src="https://placehold.co/200x70" alt="Neyo Naturals Logo" class="logo-image">
+                        </a>    
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Soaps</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="natural-bar-soap">
+                                            <div class="product-title">Natural Lemon Soap</div>
+                                            <div class="product-description">Handcrafted with organic ingredients for gentle daily cleansing</div>
+                                        </div>
+                                        <div class="product-card" data-product="exfoliating-soap">
+                                            <div class="product-title">Natural Rose Soap</div>
+                                            <div class="product-description">Natural exfoliants for smooth, radiant skin</div>
+                                        </div>
+                                        <div class="product-card" data-product="moisturizing-soap">
+                                            <div class="product-title">Natural Aloe-Vera Soap</div>
+                                            <div class="product-description">Enriched with shea butter and natural oils</div>
+                                        </div>
+                                        <div class="product-card" data-product="antibacterial-soap">
+                                            <div class="product-title">Natural Multani-Matti Soap</div>
+                                            <div class="product-description">Natural antimicrobial properties with tea tree oil</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Facial Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="daily-cleanser">
+                                            <div class="product-title">Gentle Face Wash</div>
+                                            <div class="product-description">Gentle foam cleanser for daily use</div>
+                                        </div>
+                                        <div class="product-card" data-product="face-serum">
+                                            <div class="product-title">Oily Skin Face Wash</div>
+                                            <div class="product-description">Anti-aging serum with natural botanicals</div>
+                                        </div>
+                                        <div class="product-card" data-product="moisturizer">
+                                            <div class="product-title">Face Moisturizer</div>
+                                            <div class="product-description">Hydrating cream for all skin types</div>
+                                        </div>
+                                        <div class="product-card" data-product="face-mask">
+                                            <div class="product-title">Face Scrub</div>
+                                            <div class="product-description">Deep cleansing clay mask</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Body Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="body-lotion">
+                                            <div class="product-title">Shower Gel1</div>
+                                            <div class="product-description">Rich, nourishing formula for soft skin</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-scrub">
+                                            <div class="product-title">Shower Gel2</div>
+                                            <div class="product-description">Exfoliating scrub with natural sea salt</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-oil">
+                                            <div class="product-title">Body Lotion1</div>
+                                            <div class="product-description">Luxurious oil blend for deep moisturizing</div>
+                                        </div>
+                                        <div class="product-card" data-product="body-butter">
+                                            <div class="product-title">Body Lotion2</div>
+                                            <div class="product-description">Intense hydration for dry skin</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="collection.html">Hair Care</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="product-grid">
+                                        <div class="product-card" data-product="natural-shampoo">
+                                            <div class="product-title">Natural Shampoo1</div>
+                                            <div class="product-description">Sulfate-free formula for healthy hair</div>
+                                        </div>
+                                        <div class="product-card" data-product="conditioner">
+                                            <div class="product-title">Natural Shampoo2</div>
+                                            <div class="product-description">Deep conditioning treatment</div>
+                                        </div>
+                                        <div class="product-card" data-product="hair-oil">
+                                            <div class="product-title">Conditioner 1</div>
+                                            <div class="product-description">Nourishing oil for hair growth</div>
+                                        </div>
+                                        <div class="product-card" data-product="hair-mask">
+                                            <div class="product-title">Conditioner 2</div>
+                                            <div class="product-description">Weekly intensive treatment</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div  class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </div>
+
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Soaps</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="natural-bar-soap">
+                    <div class="mobile-product-title">Natural Bar Soap</div>
+                    <div class="mobile-product-description">Handcrafted with organic ingredients</div>
+                </div>
+                <div class="mobile-product-card" data-product="exfoliating-soap">
+                    <div class="mobile-product-title">Exfoliating Soap</div>
+                    <div class="mobile-product-description">Natural exfoliants for smooth skin</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Facial Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="daily-cleanser">
+                    <div class="mobile-product-title">Daily Cleanser</div>
+                    <div class="mobile-product-description">Gentle foam cleanser</div>
+                </div>
+                <div class="mobile-product-card" data-product="face-serum">
+                    <div class="mobile-product-title">Face Serum</div>
+                    <div class="mobile-product-description">Anti-aging serum</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Body Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="body-lotion">
+                    <div class="mobile-product-title">Body Lotion</div>
+                    <div class="mobile-product-description">Rich, nourishing formula</div>
+                </div>
+                <div class="mobile-product-card" data-product="body-scrub">
+                    <div class="mobile-product-title">Body Scrub</div>
+                    <div class="mobile-product-description">Exfoliating sea salt scrub</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a class="mobile-nav-link" data-page="collection.html">Hair Care</a>
+            <div class="mobile-product-grid">
+                <div class="mobile-product-card" data-product="natural-shampoo">
+                    <div class="mobile-product-title">Natural Shampoo</div>
+                    <div class="mobile-product-description">Sulfate-free formula</div>
+                </div>
+                <div class="mobile-product-card" data-product="conditioner">
+                    <div class="mobile-product-title">Conditioner</div>
+                    <div class="mobile-product-description">Deep conditioning treatment</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Pure Natural Beauty</h1>
+                    <p class="hero-subtitle">Discover the power of nature with our handcrafted, organic skincare products</p>
+                    <div class="hero-buttons">
+                        <a href="collection.html" class="btn btn-primary">Shop Now</a>
+                        <a href="about.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="best-sellers" id="best-sellers">
+        <div class="container">
+            <h2 class="section-title">Best Selling Soaps</h2>
+            <p class="section-subtitle">Our most loved handcrafted natural soaps, made with premium organic ingredients</p>
+            <div class="soap-grid">
+                <!-- Lemon Soap Card -->
+                <div class="soap-card" data-product-url="lemon.html">
+                    <div class="soap-image">
+                        <div class="soap-placeholder lavender">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="soap-badge">Bestseller</div>
+                    </div>
+                    <div class="soap-info">
+                        <h3 class="soap-name">Lemon soap</h3>
+                        <p class="soap-description">Calming lavender essential oil with organic shea butter for ultimate relaxation</p>
+                        <div class="soap-benefits">
+                            <span class="benefit">Relaxing</span>
+                            <span class="benefit">Moisturizing</span>
+                        </div>
+                        <div class="soap-price">₹299</div>
+                        <button class="add-to-cart-btn" data-soap="lavender">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Aloe Vera Soap Card -->
+                <div class="soap-card" data-product-url="aloe-vera.html">
+                    <div class="soap-image">
+                        <div class="soap-placeholder tea-tree">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="soap-badge">Popular</div>
+                    </div>
+                    <div class="soap-info">
+                        <h3 class="soap-name">Aloe-vera soap</h3>
+                        <p class="soap-description">Purifying tea tree oil with natural clay for deep cleansing and clear skin</p>
+                        <div class="soap-benefits">
+                            <span class="benefit">Purifying</span>
+                            <span class="benefit">Acne-Fighting</span>
+                        </div>
+                        <div class="soap-price">₹329</div>
+                        <button class="add-to-cart-btn" data-soap="tea-tree">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Rose Soap Card -->
+                <div class="soap-card" data-product-url="rose.html">
+                    <div class="soap-image">
+                        <div class="soap-placeholder honey-oat">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="soap-badge">New</div>
+                    </div>
+                    <div class="soap-info">
+                        <h3 class="soap-name">Rose soap</h3>
+                        <p class="soap-description">Raw honey and oatmeal exfoliation for soft, glowing, naturally radiant skin</p>
+                        <div class="soap-benefits">
+                            <span class="benefit">Exfoliating</span>
+                            <span class="benefit">Brightening</span>
+                        </div>
+                        <div class="soap-price">₹349</div>
+                        <button class="add-to-cart-btn" data-soap="honey-oat">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Multani Mitti Soap Card -->
+                <div class="soap-card" data-product-url="multani-mitti.html">
+                    <div class="soap-image">
+                        <div class="soap-placeholder charcoal">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="soap-badge">Premium</div>
+                    </div>
+                    <div class="soap-info">
+                        <h3 class="soap-name">Multani-mitti soap</h3>
+                        <p class="soap-description">Detoxifying activated charcoal with eucalyptus for deep pore cleansing</p>
+                        <div class="soap-benefits">
+                            <span class="benefit">Detoxifying</span>
+                            <span class="benefit">Deep Clean</span>
+                        </div>
+                        <div class="soap-price">₹379</div>
+                        <button class="add-to-cart-btn" data-soap="charcoal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">About NEYO Naturals</h2>
+                    <p class="about-description">
+                        At NEYO Naturals, we believe in the transformative power of nature. Our carefully curated collection of natural beauty products is crafted with love, using only the finest organic ingredients sourced from sustainable farms around the world.
+                    </p>
+                    <p class="about-description">
+                        From nourishing soaps to rejuvenating facial treatments, each product is designed to enhance your natural beauty while caring for your skin and the environment.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Natural</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-recycle"></i>
+                            <span>Eco-Friendly</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Cruelty-Free</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-spa"></i>
+                        <p>Natural Beauty Products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="product-categories" id="product-categories">
+        <div class="container">
+            <h2 class="section-title">Our Product Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-page="collection.html" data-category="soaps">
+                    <div class="category-icon">
+                        <i class="fas fa-soap"></i>
+                    </div>
+                    <h3>Natural Soaps</h3>
+                    <p>Handcrafted soaps with essential oils and natural ingredients</p>
+                </div>
+                <div class="category-card" data-page="collection.html" data-category="facial-care">
+                    <div class="category-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Facial Care</h3>
+                    <p>Gentle cleansers, moisturizers, and treatments for radiant skin</p>
+                </div>
+                <div class="category-card" data-page="collection.html" data-category="body-care">
+                    <div class="category-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Body Care</h3>
+                    <p>Nourishing lotions, scrubs, and oils for silky smooth skin</p>
+                </div>
+                <div class="category-card" data-page="collection.html" data-category="hair-care">
+                    <div class="category-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Hair Care</h3>
+                    <p>Natural shampoos, conditioners, and treatments for healthy hair</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div id="loadingText">Loading products...</div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-box">
+                            <span class="logo-text">NEYO</span>
+                            <span class="logo-subtext">NATURALS</span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <span>8866110762</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@neyonaturals.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ahmedabad, Gujarat, India</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <a href="collection.html" data-page="collection.html">All Products</a>
+                        <a href="about-us.html" data-page="abour-us.html">About Us</a>
+                        <a href="policy.html" data-page="policy.html">Privacy Policy</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Neyo Naturals. All rights reserved.</p>
+                <p>Crafted with ❤️ for natural beauty</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assests/js/main.js"></script>
+    <script src="assests/js/index-page/hero.js"></script>
+    <script src="assests/js/index-page/best-seller.js"></script>
+    <script src="assests/js/index-page/collection.js"></script>
+    <script src="assets/js/cart-manager.js"></script>
+    <script>
+        // Simple Cart Functions
+        function getCart() {
+            try {
+                return JSON.parse(localStorage.getItem('neyoCart') || '[]');
+            } catch (e) {
+                console.error('Error loading cart:', e);
+                return [];
+            }
+        }
+
+        function saveCart(cart) {
+            try {
+                localStorage.setItem('neyoCart', JSON.stringify(cart));
+                updateCartCount();
+                console.log('Cart saved:', cart);
+            } catch (e) {
+                console.error('Error saving cart:', e);
+            }
+        }
+
+        function updateCartCount() {
+            const cart = getCart();
+            const count = cart.reduce((total, item) => total + item.quantity, 0);
+            const cartCountElement = document.querySelector('.cart-count');
+            
+            console.log('Updating cart count:', count);
+            
+            if (cartCountElement) {
+                cartCountElement.textContent = count;
+                if (count === 0) {
+                    cartCountElement.style.display = 'none';
+                } else {
+                    cartCountElement.style.display = 'flex';
+                }
+            }
+        }
+
+        function addToCart(productData) {
+            console.log('Adding to cart:', productData);
+            
+            const cart = getCart();
+            const existingItem = cart.find(item => item.id === productData.id);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    id: productData.id,
+                    name: productData.name,
+                    description: productData.description || '',
+                    price: productData.price,
+                    quantity: 1,
+                    image: productData.image || 'default',
+                    benefits: productData.benefits || []
+                });
+            }
+            
+            saveCart(cart);
+            showNotification(`${productData.name} added to cart!`);
+        }
+
+        function showNotification(message) {
+            console.log('Notification:', message);
+            
+            // Remove existing notification
+            const existingNotification = document.querySelector('.cart-notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+            
+            // Create new notification
+            const notification = document.createElement('div');
+            notification.className = 'cart-notification show';
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: linear-gradient(135deg, #27ae60, #229954);
+                color: #fff;
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                z-index: 9999;
+                font-size: 14px;
+                font-weight: bold;
+                transform: translateX(0);
+                transition: transform 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.style.transform = 'translateX(300px)';
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Page loaded, setting up cart...');
+            
+            // Update cart count on page load
+            updateCartCount();
+            
+            // Make cart icon clickable
+            const cartIcon = document.querySelector('.cart-icon');
+            if (cartIcon) {
+                cartIcon.style.cursor = 'pointer';
+                cartIcon.addEventListener('click', function() {
+                    console.log('Cart icon clicked');
+                    window.location.href = 'cart.html';
+                });
+            }
+            
+            // Handle add to cart buttons
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+            console.log('Found add to cart buttons:', addToCartButtons.length);
+            
+            addToCartButtons.forEach((button, index) => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    console.log('Add to cart button clicked:', index);
+                    
+                    // Get product data from the soap card
+                    const soapCard = this.closest('.soap-card');
+                    if (!soapCard) {
+                        console.error('Soap card not found');
+                        return;
+                    }
+                    
+                    const name = soapCard.querySelector('.soap-name')?.textContent.trim();
+                    const description = soapCard.querySelector('.soap-description')?.textContent.trim();
+                    const priceText = soapCard.querySelector('.soap-price')?.textContent.trim();
+                    const price = parseInt(priceText.replace(/[^\d]/g, ''));
+                    const benefits = Array.from(soapCard.querySelectorAll('.benefit')).map(el => el.textContent.trim());
+                    
+                    console.log('Extracted data:', { name, description, price, benefits });
+                    
+                    // Determine image class
+                    let image = 'default';
+                    if (name && name.toLowerCase().includes('lemon')) image = 'lemon';
+                    else if (name && name.toLowerCase().includes('aloe')) image = 'aloe-vera';
+                    else if (name && name.toLowerCase().includes('rose')) image = 'rose';
+                    else if (name && name.toLowerCase().includes('multani')) image = 'multani-mitti';
+                    
+                    const productData = {
+                        id: name ? name.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'unknown',
+                        name: name || 'Unknown Product',
+                        description: description || '',
+                        price: price || 0,
+                        image: image,
+                        benefits: benefits
+                    };
+                    
+                    // Add visual feedback
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> Added!';
+                    this.style.background = '#27ae60';
+                    
+                    // Add to cart
+                    addToCart(productData);
+                    
+                    // Reset button after 2 seconds
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        this.style.background = '';
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
